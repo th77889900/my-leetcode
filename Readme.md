@@ -1,1 +1,1 @@
-这是我的leetcode刷题记录
+This is my leetcode recorde
