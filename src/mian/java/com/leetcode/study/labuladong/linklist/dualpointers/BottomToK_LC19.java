@@ -7,7 +7,20 @@ import com.leetcode.study.labuladong.linklist.ListNode;
  * @author : Cody
  * @date : 2023-06-18 8:01 p.m.
  */
-public class BottomToK {
+public class BottomToK_LC19 {
+
+
+    public ListNode removeFromEnd(ListNode head, int n) {
+
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+
+        ListNode node = findFromBottom(dummy, n + 1);
+
+        node.next = node.next.next;
+
+        return head;
+    }
 
     public ListNode findFromBottom(ListNode head, int k) {
 
